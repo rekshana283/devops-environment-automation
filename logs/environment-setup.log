@@ -1,0 +1,84 @@
+==========================================
+     DevOps Environment Automation
+==========================================
+Started at: Tue Sep 22 14:35:44 IST 2026
+
+Checking system information...
+
+Operating System: MINGW64_NT-10.0-26200
+Architecture: x86_64
+
+Checking Git...
+git version 2.55.0.windows.3
+
+Checking Docker...
+Docker version 29.7.2, build a7dcaa6
+
+Checking Docker service...
+Docker is running.
+
+Checking Kubectl...
+Client Version: v1.36.1
+Kustomize Version: v5.8.1
+
+Checking Minikube...
+v1.39.0
+
+Checking Minikube status...
+Minikube is available.
+
+==========================================
+Environment validation completed.
+Completed at: Tue Sep 22 14:35:46 IST 2026
+==========================================
+==========================================
+     DevOps Environment Automation
+==========================================
+Started at: Tue Sep 22 14:40:20 IST 2026
+
+Checking system information...
+
+Operating System: MINGW64_NT-10.0-26200
+Architecture: x86_64
+
+Checking Git...
+git version 2.55.0.windows.3
+
+Checking Docker...
+Docker version 29.7.2, build a7dcaa6
+
+Checking Docker service...
+Docker is running.
+
+Checking Kubectl...
+Client Version: v1.36.1
+Kustomize Version: v5.8.1
+
+Checking Minikube...
+v1.39.0
+
+Checking Minikube status...
+Minikube is available.
+
+==========================================
+Environment validation completed.
+Completed at: Tue Sep 22 14:40:23 IST 2026
+
+Checking Kubernetes cluster...
+Minikube is running.
+
+Deploying Kubernetes application...
+deployment.apps/devops-demo created
+service/devops-demo-service created
+
+Checking deployment status...
+NAME          READY   UP-TO-DATE   AVAILABLE   AGE
+devops-demo   0/2     2            0           0s
+NAME                          READY   STATUS              RESTARTS   AGE
+devops-demo-9b6f57945-ns4zr   0/1     ContainerCreating   0          0s
+devops-demo-9b6f57945-nxw9c   0/1     ContainerCreating   0          0s
+NAME                  TYPE        CLUSTER-IP      EXTERNAL-IP   PORT(S)   AGE
+devops-demo-service   ClusterIP   10.103.15.248   <none>        80/TCP    1s
+
+Kubernetes deployment completed successfully.
+==========================================
